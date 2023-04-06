@@ -43,7 +43,10 @@ SELECT * FROM EmployeePosition WHERE EmpPosition = 'Manager';
 5. Write a query to fetch the department-wise count of employees sorted by department’s count in ascending
 order.
 ```
-SELECT EmpPosition, COUNT(*) AS EmployeeCount FROM EmployeePosition GROUP BY EmpPosition ORDER BY EmployeeCount ASC;
+SELECT EmpPosition, COUNT(*) AS EmployeeCount 
+FROM EmployeePosition 
+GROUP BY EmpPosition 
+ORDER BY EmployeeCount ASC;
 ```
 6. Write a recursive CTE that will display in order all the dates of a given month (e.g. Jan 1, Jan
 2,...Jan 31) 
