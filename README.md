@@ -25,7 +25,11 @@ SELECT COUNT(*) FROM EmployeeInfo WHERE Department = 'HR';
 ```
 2. Write a query to create a new table which consists of data and structure copied from the other table.
 ```
-CREATE TABLE NewTable LIKE EmployeePosition;
+CREATE TABLE NewTable
+AS
+SELECT 
+  * 
+FROM EmployeePosition;
 ```
 3. Write a query to retrieve the EmpFname and EmpLname in a single column as “FullName”. The first name
 and the last name must be separated with space.
